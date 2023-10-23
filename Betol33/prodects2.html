@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!-- Lenke til Font Awesome for ikoner -->
+        
+        <title>Din nettbutikk</title>
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Lenker til Slick Carousel stilark for å vise produktbilder i et karusellformat -->
+
+        <link rel="stylesheet" href="css/style2.css" type="text/css">
+        <!-- Lenke til et eksternt stilark -->
+
+    </head>
+    <body>
+
+    <!-- Start av body, inneholder alt synlig innhold på siden -->
+
+    <header> 
+        <!-- Logo og hjem-lenke -->
+
+       <a href="index2.html"><img src="img/logo.png" width="150" alt="Nye ankomster"/></a>
+       <nav>
+           <section id="myLinks"> 
+               <!-- Søkefelt med søkeikon -->    
+  
+               <form class="search"><i class="fa-solid fa-magnifying-glass"></i><input placeholder="search"/></form>                
+                <!-- Navigasjonslenker med ikoner fra FontAwesome -->                    
+
+               <a href="index2.html"><i class="fas fa-home"></i> Hjem</a>
+               <a href="prodects2.html"><i class="fas fa-shopping-cart"></i> Products</a>
+               <a href="#services"><i class="fa-solid fa-phone"></i> Call Us</a>
+               <a href="creataccount.html"><i class="fa-solid fa-user"></i> Account </a>
+                                   <!--handlekurv-ikoner -->
+
+               <a href="#"><i class="fa-solid fa-bag-shopping"></i> Kurv</a>
+           </section>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fas fa-bars fa-2x" id="burger"></i></a>
+       </nav>   
+
+   </header>
+        <main class="produkt-detaljer"> 
+            <article class="produkt-slider">
+                <img src="img/pic1.jpg" alt="pic1">
+            </article>
+
+            <article class="produkt_info">
+                <p class="product-link"> Many/Mann/Boots </p>
+                <h2>klassisk sko </h2>
+                <p> er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok</p>
+                <ul>
+<!-- Liste med tilgjengelige størrelser for produktet -->
+
+                    <li>36</li>
+                    <li>38</li>
+                    <li>39</li>
+                    <li>40</li>
+                    <li>41</li>
+                    <li>42</li>
+                </ul>
+                <!-- Prisinformasjon -->
+
+                <p class="price"> 300 <span> kr </span></p>
+                <button>Add</button>
+                <!-- Kjøpsknapp -->
+
+            </article>
+          </main>
+
+          <footer>
+            <section>
+                <article>
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li>Email: eksempel@nettbutikk.no</li>
+                        <li>Telefon: 0123456789</li>
+                    </ul>
+                </article>
+        
+                <article>
+                    <h3>Informasjon</h3>
+                    <ul>
+                        <li><a href="#">Betalingsmåter</a></li>
+                        <li><a href="#">Retur</a></li>
+                        <li><a href="#">Personvernpolicy</a></li>
+                        <li><a href="#">Vilkår & betingelser</a></li>
+                    </ul>
+                </article>
+        
+                <article class="so-icons">
+                    <!-- container for sosiale medier ikoner -->
+
+                    <h3>Følg oss</h3>
+                    <ul class="oss">
+
+                        <!-- liste med sosiale medier ikoner -->
+
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </article> 
+            </section> 
+                    <!-- Kopirettinformasjon og e-post -->
+
+                <p> nettbutikk &copy; 2023. e-post: <a href="Email:eksempel@nettbutikk.no">eksempel@nettbutikk.no</a></p>
+    
+        </footer>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                x.style.display = "block";
+                }
+             }
+        </script> 
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- inkluderer en stilark for normalisering. Dette sikrer at nettstedets stil er konsistent på tvers av forskjellige nettlesere ved å nøytralisere nettleserspesifikke standardstiler -->
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- inkluderer ikon-stiler fra FontAwesome-->
+
+    <link rel="stylesheet" href="css/style2.css" type="text/css">
+     <!-- setter tittelen på nettsiden som vil vises i nettleserens fanekort -->
+
+    <title>Din nettbutikk</title>
+</head>
+<body>
+    <header> 
+        <!-- Logo og hjem-lenke -->
+
+       <a href="index2.html"><img src="img/logo.png" width="150" alt="Nye ankomster"/></a>
+       <nav>
+           <section id="myLinks"> 
+               <!-- Søkefelt med søkeikon -->    
+  
+               <form class="search"><i class="fa-solid fa-magnifying-glass"></i><input placeholder="search"/></form>                
+                <!-- Navigasjonslenker med ikoner fra FontAwesome -->                    
+
+               <a href="index2.html"><i class="fas fa-home"></i> Hjem</a>
+               <a href="prodects2.html"><i class="fas fa-shopping-cart"></i> Products</a>
+               <a href="#services"><i class="fa-solid fa-phone"></i> Call Us</a>
+               <a href="creataccount.html"><i class="fa-solid fa-user"></i> Account </a>
+                                   <!--handlekurv-ikoner -->
+
+               <a href="#"><i class="fa-solid fa-bag-shopping"></i> Kurv</a>
+           </section>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fas fa-bars fa-2x" id="burger"></i></a>
+       </nav>   
+
+   </header>
+<!-- Fire artikler som representerer forskjellige kategorier av produkter: Mann, Kvinne, Barn og Outlet -->
+    <!-- Hver artikkel inneholder en overskrift og et bilde -->
+    <main class="articlecalss">
+        <article>
+            <h2>Mann</h2>
+            <img src="img/pic1.jpg" alt="Mann kategori">
+        </article>
+
+        <article>
+            <h2>Kvinner</h2>
+            <img src="img/pic2.jpg" alt="Kvinne kategori">
+        </article>
+        
+        <article>
+            <h2>Barn</h2>
+            <img src="img/pic3.jpg" alt="Barn kategori">
+        </article>
+        
+        <article>
+            <h2>Outlet</h2>
+            <img src="img/pic4.jpg" alt="Outlet kategori">
+        </article>
+    </main>
+
+    <footer>
+  <!-- siden foten (footer) med ekstra informasjon og lenker -->
+    <!-- en seksjoner i foten: følge oss, Kontakt og Informasjon -->
+       
+        <section>
+        <article>
+            <h3>Kontakt</h3>
+            <ul>
+                <li>Email: eksempel@nettbutikk.no</li>
+                <li>Telefon: 0123456789</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Informasjon</h3>
+            <ul>
+                <li><a href="#">Betalingsmåter</a></li>
+                <li><a href="#">Retur</a></li>
+                <li><a href="#">Personvernpolicy</a></li>
+                <li><a href="#">Vilkår & betingelser</a></li>
+            </ul>
+        </article>
+            <!-- sosiale medier ikoner -->
+        <article class="so-icons">
+            <h3>Følg oss</h3>
+            <ul class="oss">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </article> 
+    </section> 
+    <!-- kopirettighetsinformasjon -->
+
+        <p> nettbutikk &copy; 2023. e-post: <a href="Email:eksempel@nettbutikk.no">eksempel@nettbutikk.no</a></p>
+
+    </footer>
+    
+   <!-- gjøre menyen responsiv -->
+   <script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+     }
+</script> 
+
+</body>
+</html>

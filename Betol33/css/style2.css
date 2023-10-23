@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Definerer stiler for <body>-elementet, inkludert en margin rundt alt innhold, en skrifttype, og en bakgrunnsfarge */
+
+body {
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E8CCE0;
+    /*  grid-container har header, main og footer */
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+/* Styler header elementet med full bredde, flexbox for enkel , og  padding og bakgrunnsfarge */
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgb(200, 82, 182);
+}
+.search{
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+}
+.search input{
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+/* Setter ikonet til å være skjult som standard */
+
+.icon{
+	display:none;
+}
+nav{
+	display:flex;
+	align-items:center;
+    gap:20px;
+    cursor: pointer;
+}
+/* Fjerner understreking fra lenker i navigasjonsmenyen og setter tekstfargen til hvit */
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Setter stil for ikonene i navigasjonsmenyen */
+
+nav i{
+    color: #ffffff;
+    font-size: 1em;
+}
+/* Definerer margin for hver lenke i konteineren */
+
+#myLinks {
+	display:flex;
+	z-index:1;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;	
+}
+/* Definerer stil for lenkene i den responsive navigasjonsmenyen */
+
+#myLinks a{
+margin: 10px;
+
+}
+
+
+/* Styler hovedinnholdsområdet med margin, padding og bakgrunnsfarge */
+.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.responsive a {
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+
+/* Styler hovedinnholdsområdet med margin, padding og bakgrunnsfarge */
+main{
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #E8CCE0;
+}
+/* Definerer en gridlayout for artikkelklassen, med to kolonner og rader, og definerer mellomrom mellom elementene */
+
+.articlecalss {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+/* Setter bredden til bilder inni main-seksjonen til 100% */
+.articlecalss img {
+    width: 100%;
+    box-shadow: 1px 1px 10px #a3a3a3;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+/* Setter stil for overskrifter av type h2 med stor skriftstørrelse og bakgrunnsfarge */
+
+h2 {
+    font-size: 3em;
+    background-color:#f4c6f1;
+}
+
+/* Styler <section>-elementet inne i <footer> med grid-område, flexboks layout for horisontal justering, og diverse padding og margin */
+
+footer section{
+    grid-area: footer;
+    padding: 20px;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+    margin: 20px;
+    justify-content:space-around;
+    text-align: center;
+}
+
+
+footer ul {
+    list-style:none;  
+}
+
+/* Legger til padding for hvert <li>-element i <ul>-elementer i footer */
+
+footer ul li {
+    padding: 10px;  
+}
+footer ul li a {
+   color: #242424 ; 
+   text-decoration: none; 
+}
+/* Setter stil for lenker i listen når de holdes over, med endring av farge og fontstørrelse */
+
+footer ul li a:hover{
+    color:#f6577c ;
+    font-size: 1.2em;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+
+
+    /* Styler container for sosiale ikoner med flexboks layout for vertikal justering */
+
+}
+footer .so-icons {
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Setter skriftstørrelse for overskrifter av type h3 */
+
+h3{
+    font-size: 1em;
+}
+
+/* Setter stil for lenker i sosiale ikonlister */
+
+.so-icons ul li a{
+  color: #ffffff;
+}
+
+
+/* Styler "om oss" seksjon med flexboks layout for vertikal justering */
+
+
+.oss {
+    display: flex;
+    flex-direction: column;
+
+    justify-content:space-between;
+}
+
+/* produkt style */
+.produkt-detaljer{
+    display:flex;
+	flex-direction:row;
+    flex-wrap:nowrap;
+    margin: 20px;
+}
+
+
+/* Setter bredde på bilder i produkt-detaljer */
+
+.produkt-detaljer img{
+    width: 80%;
+}
+
+.produkt_info{
+    width: 48%;
+}
+
+
+/* Setter stil for produktinformasjon, inkludert bredde og stil for tekst og lister */
+
+.produkt_info p{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.produkt_info ul{
+    display: flex;
+    flex-wrap:wrap;
+    padding-bottom: 20px;
+}
+.produkt_info ul li{
+    list-style: none;
+    padding: 20px;
+    margin-right:20px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 50%;
+}
+.produkt_info button{
+    padding: 10px 30px;
+    background-color: #000000;
+    color: #ffffff;
+    outline: none;
+    border: none;
+
+}
+.produkt_info .price{
+    color: #242424;
+    font-size:40px;
+    font-weight: bold;
+}
+
+.produkt_info .price span{
+    color: #f6577c;
+    font-size: 50px;
+}
+
+/* account */
+.account-content{
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.account-content form .form-grupp{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+
+.account-content form .form-grupp input, .account-content form .form-grupp select{
+    
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid #741258;
+
+}
+
+.account-content form .form-grupp label{
+    padding-bottom: 10px;
+    font-weight: 700;
+    text-align: left;
+    
+}
+
+.account-content button{
+     padding: 20px 40px; 
+     background-color: #000000;
+     color: white;
+     border: none;
+     outline: none;
+     border-radius: 50px;
+}
+
+
+/* Media Query for skjermstørrelser opp til 887px */
+
+
+@media only screen and (max-width: 887px) {
+    main{
+        text-align: center;
+        display: flex;
+        flex-direction:row;
+    }
+
+    header{
+        display: flex;
+        flex-direction:column;
+    }
+    .articlecalss{
+        display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    /* endring av flexboks retning */
+
+    footer section{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+/* Justeringer for produkt-detaljer, inkludert endring av flexboks retning og justering */
+
+    .produkt-detaljer{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        margin: 20px;
+        justify-content: center;
+    }
+
+/* Justeringer for produktinformasjon, inkludert endring av flexboks layout */
+
+    .produkt_info{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        margin: 20px;
+        align-self: center;
+    }
+   
+
+
+    /* Viser ikonet og justerer posisjonen */
+
+.icon{
+	background: none;
+	border:none;
+	display: block;
+	position: absolute;
+	right: 25px;
+	top: 25px;
+}
+/* Justeringer for navigasjonsmeny, inkludert endring av flexboks retning og padding */
+
+nav{
+	align-items:flex-start;
+	flex-direction:column;
+    padding: 10px;
+
+}
+/* Skjuler lenkekonteineren og setter bredde */
+
+#myLinks {
+	width:100%;
+	display: none;
+}
+nav a {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+
+
+.articlecalss img {
+    height: 600px;
+}
+    
+}
